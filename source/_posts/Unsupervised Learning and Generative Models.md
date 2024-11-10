@@ -54,11 +54,11 @@ Given training data, geneerate new samples from same distribution.
 
 这里视频讲的不是很清楚，推荐苏老师的[博客](https://spaces.ac.cn/archives/5253)
 
-![image.png](img/Unsupervised_Learning_and_Generative_Models/image 1.png)
+![image.png](img/Unsupervised_Learning_and_Generative_Models/image%201.png)
 
 在讨论VAE之前，我们先来看一看Autoencoders
 
-![image.png](img/Unsupervised_Learning_and_Generative_Models/image 2.png)
+![image.png](img/Unsupervised_Learning_and_Generative_Models/image%202.png)
 
 在学习之前先使用Autoencoders，可以减少features的数量，从而减少过拟合的风险
 
@@ -66,7 +66,7 @@ Given training data, geneerate new samples from same distribution.
     - 在样本量不足的场景当中，我们想要增加样本量以达到更好的效果。如果能够根据一批一批数据样本$\{X_1,…,X_n\}$直接找到$X$的分布$p(X)$,那我直接根据$p(X)$来采样就可以了。但是这是不能实现的。
     - 于是我们曲线救国，把AE中的向量z（确定的）改为一个正态分布（不确定的）这样我们就把有限的数据样本扩展到无穷维了（应为正态分布里面可以随便采样）（使用正态分布是启发式的）
     
-    ![image.png](img/Unsupervised_Learning_and_Generative_Models/image 3.png)
+    ![image.png](img/Unsupervised_Learning_and_Generative_Models/image%203.png)
     
 - 其中均值方差计算模块与生成器模块都是由网络实现的（什么不好算就交给网络，这是神经网络时代的哲学）
 
@@ -74,7 +74,7 @@ Given training data, geneerate new samples from same distribution.
 
 当样本的分布过于复杂之时，我们可以放弃考虑样本分布，转而使用一个博弈的思想，一个Generator network，和一个Discriminator network，生成网络尝试去欺骗过判别网络，判别网络尝试去区分出真与假的照片。
 
-![image.png](img/Unsupervised_Learning_and_Generative_Models/image 4.png)
+![image.png](img/Unsupervised_Learning_and_Generative_Models/image%204.png)
 
 我们最小化下面这个函数
 
