@@ -12,7 +12,7 @@ index_img: img/arisu8.jpg
 ---
 # Unsupervised Learning and Generative Models
 
-# Unsupervised Learning
+## Unsupervised Learning
 
 ### Supervised Learning
 
@@ -26,7 +26,7 @@ index_img: img/arisu8.jpg
 - **Goal**: Learn some underlying hidden *structure* of some data
 - **Examples**: Clustering, Dimensionality reduction(principal Component Analysis),feature learning, density estimation,etc.
 
-# Generative Models
+## Generative Models
 
 Given training data, geneerate new samples from same distribution.
 
@@ -43,14 +43,14 @@ Given training data, geneerate new samples from same distribution.
     - **Direct(GAN)**
     - Markov Chain(GSN)
 
-## PixelRNN and PixelCNN
+### PixelRNN and PixelCNN
 
 ![](img/Unsupervised_Learning_and_Generative_Models/image.png)
 
 - use neural network to express this comlex distribution!
 - PixelCNN与semantic Segmentation的区别：一个是直接使用原始图片的像素值，一个是使用人工标注的语义分割图片
 
-## Variational Autoencoders(VAE)
+### Variational Autoencoders(VAE)
 
 这里视频讲的不是很清楚，推荐苏老师的[博客](https://spaces.ac.cn/archives/5253)
 
@@ -70,7 +70,7 @@ Given training data, geneerate new samples from same distribution.
     
 - 其中均值方差计算模块与生成器模块都是由网络实现的（什么不好算就交给网络，这是神经网络时代的哲学）
 
-## Generative Adversarial Networks(GAN)
+### Generative Adversarial Networks(GAN)
 
 当样本的分布过于复杂之时，我们可以放弃考虑样本分布，转而使用一个博弈的思想，一个Generator network，和一个Discriminator network，生成网络尝试去欺骗过判别网络，判别网络尝试去区分出真与假的照片。
 
