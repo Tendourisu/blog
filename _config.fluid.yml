@@ -1033,10 +1033,10 @@ links:
   # Member item of page
   items:
     - {
-      title: "Fluid Blog",
-      intro: "主题博客",
-      link: "https://hexo.fluid-dev.com/",
-      avatar: "/img/favicon.png"
+      title: "Blogs of Kinnari",
+      intro: "Kinnariya mama taṇhā",
+      link: "https://kinnariyamamatanha.github.io/blogs/",
+      avatar: "https://raw.githubusercontent.com/KinnariyaMamaTanha/blogs/refs/heads/main/source/img/avatar1.png"
     }
     - {
       title: "Fluid Docs",
