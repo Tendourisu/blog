@@ -1038,18 +1038,7 @@ links:
       link: "https://kinnariyamamatanha.github.io/blogs/",
       avatar: "https://raw.githubusercontent.com/KinnariyaMamaTanha/blogs/refs/heads/main/source/img/avatar1.png"
     }
-    - {
-      title: "Fluid Docs",
-      intro: "主题使用指南",
-      link: "https://hexo.fluid-dev.com/docs/",
-      avatar: "/img/favicon.png"
-    }
-    - {
-      title: "Fluid Repo",
-      intro: "主题 GitHub 仓库",
-      link: "https://github.com/fluid-dev/hexo-theme-fluid",
-      avatar: "/img/favicon.png"
-    }
+    
 
   # 当成员头像加载失败时，替换为指定图片
   # When the member avatar fails to load, replace the specified image
