@@ -898,16 +898,16 @@ cusdis:
 # Based on GitHub Discussions, similar to Utterances
 # See: https://giscus.app/
 giscus:
-  repo:
-  repo-id:
-  category:
-  category-id:
+  repo: Tendourisu/blog
+  repo-id: R_kgDONC5i-Q
+  category: General
+  category-id: DIC_kwDONC5i-c4CkWMj
   theme-light: light
   theme-dark: dark
   mapping: pathname
   reactions-enabled: 1
   emit-metadata: 0
-  input-position: top
+  input-position: bottom
   lang: zh-CN
 
 # Discuss
