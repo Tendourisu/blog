@@ -1,5 +1,5 @@
 ---
-title: PA3-1-2 kth(normal)破防记录帖
+title: PA3-1-2_kth(normal)broken_post
 math: false
 mermaid: false
 date: 2024-11-24 15:50:17
