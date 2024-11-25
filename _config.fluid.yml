@@ -237,7 +237,7 @@ custom_js:
   - https://polyfill.io/v3/polyfill.min.js?features=es6
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
   - https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js
-  - https://cdnjs.cloudflare.com/ajax/libs/social-share.js/1.0.16/css/share.min.css
+  - https://fastly.jsdelivr.net/gh/stevenjoezhang/live2d-widget@latest/autoload.js
 
 # 指定自定义 .css 文件路径，用法和 custom_js 相同
 # The usage is the same as custom_js
