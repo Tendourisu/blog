@@ -38,11 +38,18 @@ k个节点，故空间复杂度为$O(k)$
 ## 遇到的困难和解决方法
 1. 最开始测例都无法通过，结果发现是前文提到的insert的时候没有处理_root，结果_root根本没有被更新
 2. 解决_root的更新后，测例能过，但是oj后面全是Runtime Error，结果发现rotateAt如果有_root参与的话_root没有更新，逻辑出现错误。
+
 ![](https://raw.githubusercontent.com/Tendourisu/images/master/20241124172134.png)
 3. 解决问题2后，发现出现了oom，
-   ![](https://raw.githubusercontent.com/Tendourisu/images/master/20241124172441.png)判断是stack的开销太大（为了省时间，stack pop后是没有delete的），把stack改成了静态的array
+   ![](https://raw.githubusercontent.com/Tendourisu/images/master/20241124172441.png)
+   
+   判断是stack的开销太大（为了省时间，stack pop后是没有delete的），把stack改成了静态的array
 4. 解决oom后，发现time limit Exceeded了
-   ![](https://raw.githubusercontent.com/Tendourisu/images/master/20241124172412.png)分析发现问题还是出在stack上，遍历是$O(n)$，太慢了，于是从这里引入subtree_size来优化query的时间复杂度。此时oj由time limit Exceeded成功变成了wrong answer![](https://raw.githubusercontent.com/Tendourisu/images/master/20241124172537.png)
+   ![](https://raw.githubusercontent.com/Tendourisu/images/master/20241124172412.png)
+   
+   分析发现问题还是出在stack上，遍历是$O(n)$，太慢了，于是从这里引入subtree_size来优化query的时间复杂度。此时oj由time limit Exceeded成功变成了wrong answer
+   
+   ![](https://raw.githubusercontent.com/Tendourisu/images/master/20241124172537.png)
 5. 由于subtree_size是新添进来的功能，之前的insert在rotate后可以break了，但是现在不行！它的祖先的subtree_size需要维护！删掉了break后，wrong answer由四个变成了三个![](https://raw.githubusercontent.com/Tendourisu/images/master/20241124172757.png)
 6. 在insert和remove时只在该对象维护了subtree_size而祖先没有维护，修改之后，终于！通过了九成测！(以及这个bug的反例是由对拍找出来的)
 ![](https://raw.githubusercontent.com/Tendourisu/images/master/20241124172817.png)
