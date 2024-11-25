@@ -1026,7 +1026,7 @@ page404:
 #---------------------------
 links:
   enable: true
-  banner_img: /img/bg10.jpg
+  banner_img: /img/bg700000000.jpg
   banner_img_height: 60
   banner_mask_alpha: 0.3
   # 友链的成员项
