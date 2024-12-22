@@ -11,7 +11,7 @@ categories:
 index_img: https://raw.githubusercontent.com/Tendourisu/images/master/202412221451401.png
 ---
 
-- 仓库地址[GitHub - docker/getting-started: Getting started with Docker](https://github.com/docker/getting-started.git)
+- 仓库地址[GitHub - docker/getting-started: Getting started with Docker](https://github.com/docker/getting-started.git)强烈建议亲手试一试这个教程，这样你会更加深入理解 docker 的使用。本文只是将该教程里面的一些操作记录下来，方便以后查阅。
 - 如果你的 dockers 里面还没有docker/getting-started 这个镜像（image），记得 `docker pull docker/getting-started`
 - 如果你在国内无法直接连接 dockerhub，建议添加一些国内的源，参考文章 [docker pull 报错Get “https://registry-1.docker.io/v2/“: net/http: request canceled while waiting for c-CSDN博客](https://blog.csdn.net/jhgj56/article/details/142209517)
 - 对于 docker 的解释：[Docker入门教程（非常详细）从零基础入门到精通 - Webfunny](https://www.webfunny.com/blog/post/235) 我简单地将 docker 理解为，我们使用 `image` 记录下一个文件系统的切片（像照相一样成为一个不可更改的照片），然后 container 利用这个 image，拷贝一部分文件系统的切片，加上一个文件读写层，再连接到机器的内核，然后就可以虚拟出你想要的环境并且开始 run 这个环境了![](https://www.webfunny.cn/blog_img/909e0241-8f64-11ee-9e17-83fc70d0184f.jpeg)
