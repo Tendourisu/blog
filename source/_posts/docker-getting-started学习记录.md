@@ -1,5 +1,5 @@
 ---
-title: docker-getting-started学习记录
+title: docker-getting-started-learning-record
 math: false
 mermaid: false
 date: 2024-12-22 14:41:22
